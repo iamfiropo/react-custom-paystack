@@ -1,0 +1,64 @@
+.payment {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 25%;
+  padding: 20px 0;
+  margin: auto;
+  background-color: #fff;
+  margin-top: 60px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+
+    .paystack-logo {
+      width: 30.44px;
+      height: 30px;
+    }
+
+    .nairabox-logo {
+      width: 30.44px;
+      height: 30px;
+    }
+  }
+
+  .payment-form {
+    padding: 0 20px;
+  }
+
+  .card-remain {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px 20px 20px 0;
+  }
+
+  .expect-message {
+    color: red;
+  }
+
+  hr {
+    background-color: #a9a9a9;
+    margin: 20px 0;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.15;
+  }
+
+  a {
+    text-decoration: none;
+
+    p {
+      color: #000;
+      font-size: 0.8rem;
+      padding-top: 15px;
+
+      .pay-naira {
+        font-weight: 700;
+      }
+    }
+  }
+}

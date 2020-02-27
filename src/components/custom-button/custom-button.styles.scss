@@ -1,0 +1,25 @@
+.custom-button {
+
+  button {
+    width: 96%;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    background: linear-gradient(180deg,#44b669 0,#40ad57);
+    border: 1px solid #49a861;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    outline: none;
+    color: #fff;
+    height: 42px;
+    position: relative;
+    cursor: pointer;
+
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    margin: 0 0 5px;
+    text-align: center;
+    -webkit-appearance: none;
+  }
+  
+}

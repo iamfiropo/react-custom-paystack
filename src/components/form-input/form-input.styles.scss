@@ -1,0 +1,60 @@
+$sub-color: #e4e4e4;
+$main-color: #66afe9;
+
+@mixin shrinkLabel {
+  top: -14px;
+  left: 5px;
+  font-size: 12px;
+  color: $main-color;
+}
+
+.group {
+  position: relative;
+
+  .form-input {
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid $sub-color;
+    outline: none;
+    transition: all 0.3s;
+    color: #000;
+    -webkit-appearance: none;
+    box-shadow: none;
+    font-family: inherit;
+    padding: 24px 10px 10px;
+
+    &:focus {
+      outline-offset: -2px;
+      border-color: $main-color;
+    }
+
+    &:focus ~ .form-input-label {
+      @include shrinkLabel();
+    }
+  }
+
+  .cardNum {
+    width: 90%;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .form-input-label {
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 16px;
+    transition: 300ms ease all;
+
+    &:focus {
+      border-color: $main-color;
+    }
+
+    &.shrink {
+      @include shrinkLabel();
+    }
+  }
+}
